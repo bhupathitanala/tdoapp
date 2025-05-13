@@ -18,7 +18,7 @@ export default function First() {
  // Delete function
  const handleDelete=(_id)=>{   
     // console.log(_id)
-  axios.delete('http://localhost:4000/api/deletetask/'+_id)
+  axios.delete('https://todoback-rouge.vercel.app/api/deletetask/'+_id)
   .then((response)=>
   {
    if(response.status==200)
