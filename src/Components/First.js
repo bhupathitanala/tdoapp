@@ -9,7 +9,7 @@ export default function First() {
     const [list,setList] = useState([{}])
 
    useEffect(()=>{
-      axios.get('http://localhost:4000/api/getTask')
+      axios.get('https://todoback-rouge.vercel.app/api/getTask')
       .then(res => setList(res.data.tas))
    },[])
    
